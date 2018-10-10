@@ -10,6 +10,8 @@ namespace GenericsDemo
     {
         static void Main(string[] args)
         {
+            new UsingGenericList().AddItemToList();
+            Console.ReadKey();
         }
     }
 }
