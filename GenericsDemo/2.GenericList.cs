@@ -7,7 +7,15 @@ using System.Threading.Tasks;
 
 namespace GenericsDemo
 {
-    class GenericList<T> : IEnumerable<T>
+    public interface IGenericList<T>
+    {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="item"></param>
+        void Add(T item);
+    }
+    class GenericList<T> : IEnumerable<T>, IGenericList<T>
     {
         private class Node
         {
